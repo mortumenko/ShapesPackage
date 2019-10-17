@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol MeasuredShape {
-    func perimetr() -> CGFloat
+    func perimeter() -> CGFloat
     func area() -> CGFloat
 }
 
@@ -18,7 +18,7 @@ protocol Measured3dShape {
 }
 
 extension MeasuredShape {
-    func perimetr() -> CGFloat { return -1.0 }
+    func perimeter() -> CGFloat { return -1.0 }
     func area() -> CGFloat { return 0.0 }
 }
 
@@ -42,7 +42,7 @@ class Circle: BaseShape {
 
 
 extension Circle: MeasuredShape {
-    func perimetr() -> CGFloat {
+    func perimeter() -> CGFloat {
         return radius * 2.0 * .pi
     }
 }
