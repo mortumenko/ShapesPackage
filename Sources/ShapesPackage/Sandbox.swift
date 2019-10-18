@@ -10,7 +10,7 @@ import Foundation
 let silentCircle = Circle(radius: 3.5)
 let circlePerimetr = silentCircle.perimeter()
 
-class Sandbox {
+public class Sandbox {
     
     public init() {
         print("[\(self)] init")
