@@ -34,7 +34,7 @@ open class BaseShape {
 open class Circle: BaseShape {
     var radius: CGFloat!
     
-    convenience init(radius: CGFloat) {
+    public convenience init(radius: CGFloat) {
         self.init(byType: SharedResources.Types.circle)
         self.radius = radius
     }
@@ -43,7 +43,7 @@ open class Circle: BaseShape {
 
 
 extension Circle: MeasuredShape {
-    func perimeter() -> CGFloat {
+    public func perimeter() -> CGFloat {
         return radius * 2.0 * .pi
     }
 }
