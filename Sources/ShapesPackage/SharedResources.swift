@@ -7,10 +7,9 @@
 
 import Foundation
 
-class SharedResources {
+public class SharedResources {
     
-    
-    enum Types {
+    public enum Types {
         case undefined
         case rectangle
         case circle

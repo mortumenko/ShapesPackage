@@ -8,6 +8,14 @@ final class ShapesPackageTests: XCTestCase {
         // results.
         XCTAssertEqual(ShapesPackage().text, "Hello, World!")
     }
+    
+    
+    func testCirclePerimeter() {
+        let radius: CGFloat = 4.0
+        let result = radius * 2.0 * .pi
+        let circle = Circle(radius: radius)
+        XCTAssertEqual(circle.perimeter(), result, "Calculating perimeter is broken")
+    }
 
     static var allTests = [
         ("testExample", testExample),

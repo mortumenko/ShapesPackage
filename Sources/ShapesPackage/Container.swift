@@ -22,16 +22,16 @@ extension MeasuredShape {
     func area() -> CGFloat { return 0.0 }
 }
 
-class BaseShape {
+open class BaseShape {
     let shapeType: SharedResources.Types
     
-    required init(byType: SharedResources.Types) {
+    public required init(byType: SharedResources.Types) {
         shapeType = byType
     }
 }
 
 
-class Circle: BaseShape {
+open class Circle: BaseShape {
     var radius: CGFloat!
     
     convenience init(radius: CGFloat) {

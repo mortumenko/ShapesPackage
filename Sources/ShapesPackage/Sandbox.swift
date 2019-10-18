@@ -10,10 +10,9 @@ import Foundation
 let silentCircle = Circle(radius: 3.5)
 let circlePerimetr = silentCircle.perimeter()
 
-
 class Sandbox {
     
-    func startForCircles() {
+    public func startForCircles() {
         let silentCircle = Circle(radius: 3.5)
         let circlePerimeter = silentCircle.perimeter()
         print("circle's perimeter: \(circlePerimeter)")
