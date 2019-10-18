@@ -7,7 +7,6 @@
 
 import Foundation
 
-let explictedCircle = Circle(byType: .circle)
 let silentCircle = Circle(radius: 3.5)
 let circlePerimetr = silentCircle.perimeter()
 

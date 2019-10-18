@@ -23,18 +23,19 @@ extension MeasuredShape {
 }
 
 class BaseShape {
-    let shapeType: ShapesPackage.Types
+    let shapeType: SharedResources.Types
     
-    required init(byType: ShapesPackage.Types) {
+    required init(byType: SharedResources.Types) {
         shapeType = byType
     }
 }
+
 
 class Circle: BaseShape {
     var radius: CGFloat!
     
     convenience init(radius: CGFloat) {
-        self.init(byType: ShapesPackage.Types.circle)
+        self.init(byType: SharedResources.Types.circle)
         self.radius = radius
     }
     
