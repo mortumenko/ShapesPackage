@@ -14,6 +14,7 @@ final class ShapesPackageTests: XCTestCase {
         let radius: CGFloat = 4.0
         let result = radius * 2.0 * .pi
         let circle = Circle(radius: radius)
+        circle.area()
         XCTAssertEqual(circle.perimeter(), result, "Calculating perimeter is broken")
     }
 
